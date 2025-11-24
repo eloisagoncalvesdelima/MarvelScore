@@ -1,10 +1,11 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="atividadefinalpw.css">
-    <title>MarvelScore</title>
+    <title>MarvelTracker</title>
 
     <script>
         function showCharacter(id) {
@@ -20,259 +21,268 @@
 </head>
 
 <body>
-<h1>MarvelScore</h1>
+    <h1>MarvelTracker</h1>
 
-<div class="tabs">
-  <button class="tab-button" onclick="openTab('tab1')">Personagens</button>
-  <button class="tab-button" onclick="openTab('tab2')">Filmes e séries</button>
-<button class="tab-button" onclick="openTab('tab3')">Linha do Tempo</button>
-</div>
+    <div class="tabs">
+        <button class="tab-button" onclick="openTab('tab1')">Personagens</button>
+        <button class="tab-button" onclick="openTab('tab2')">Filmes e séries</button>
+        <button class="tab-button" onclick="openTab('tab3')">Linha do Tempo</button>
+    </div>
 
-<script>
-function openTab(id) {
-    document.querySelectorAll('.tab-content').forEach(div => div.classList.remove('active'));
-    document.getElementById(id).classList.add('active');
-}
-</script>
+    <script>
+        function openTab(id) {
+            document.querySelectorAll('.tab-content').forEach(div => div.classList.remove('active'));
+            document.getElementById(id).classList.add('active');
+        }
+    </script>
 
-<!-- *************************************************** -->
-<!-- ********************** TAB 1 *********************** -->
-<!-- *************************************************** -->
-<div id="tab1" class="tab-content active">
+    <div id="tab1" class="tab-content active">
 
-    <h2>Personagens do MCU</h2>
+        <h2>Personagens do MCU</h2>
 
-    <!-- LISTA DE PERSONAGENS -->
-    <div id="characters-list" class="characters-grid">
+        <!-- LISTA DE PERSONAGENS -->
+        <div id="characters-list" class="characters-grid">
 
-        <!-- Tony Stark -->
-        <div class="character-card" onclick="showCharacter('ironman')">
-            <img src="https://p2.trrsf.com/image/fget/cf/1200/1200/middle/images.terra.com/2024/07/28/1651641699-3a8eb62cd10602cdc82f6d046d84b343.jpg" alt="">
-            <p>Tony Stark / Homem de Ferro</p>
+            <div class="character-card" onclick="showCharacter('ironman')">
+                <img src="https://p2.trrsf.com/image/fget/cf/1200/1200/middle/images.terra.com/2024/07/28/1651641699-3a8eb62cd10602cdc82f6d046d84b343.jpg"
+                    alt="">
+                <p>Tony Stark / Homem de Ferro</p>
+            </div>
+
+            <div class="character-card" onclick="showCharacter('capitao')">
+                <img src="https://i.pinimg.com/564x/14/2e/1f/142e1f9eb0e05a2ca720d1d6e70a7a4d.jpg" alt="">
+                <p>Steve Rogers / Capitão América</p>
+            </div>
+
+            <div class="character-card" onclick="showCharacter('hulk')">
+                <img src="https://t.ctcdn.com.br/tn5XAN-HzlxywFs2cY_0ziwJ9O4=/768x432/smart/i1004921.jpeg" alt="">
+                <p>Hulk / Bruce Banner</p>
+            </div>
+
+            <div class="character-card" onclick="showCharacter('thor')">
+                <img src="https://rollingstone.com.br/wp-content/uploads/chris_hemsworth_em_vingadores_ultimato_-_foto__divulgacao__marvel_studios.jpg"
+                    alt="">
+                <p>Thor Odinson</p>
+            </div>
+
+            <div class="character-card" onclick="showCharacter('clint')">
+                <img src="https://www.correiodopovo.com.br/image/contentid/policy:1.945763:1679265514/gaviao-arqueiro-1.jpg?f=4x3&q=0.9&w=800&$p$f$q$w=d617d68"
+                    alt="">
+                <p>Gavião Arqueiro / Clint Barton</p>
+            </div>
+
+            <div class="character-card" onclick="showCharacter('natasha')">
+                <img src="https://lumiere-a.akamaihd.net/v1/images/vn_foto_ucm3_3efb99a0.jpeg?region=0,0,1798,1012"
+                    alt="">
+                <p>Viuva Negra / Natasha Romanoff</p>
+            </div>
+
+            <div class="character-card" onclick="showCharacter('quill')">
+                <img src="https://lumiere-a.akamaihd.net/v1/images/pp_guardiansofthegalaxy_vol3_herobanner_mobile_2106_11083cec.jpeg?region=80,0,480,480"
+                    alt="">
+                <p>Senhor das Estrelas / Peter Quill</p>
+            </div>
+
+            <div class="character-card" onclick="showCharacter('gamora')">
+                <img src="https://ovicio.com.br/wp-content/uploads/2023/05/20230514-ovicio-gamora-mcu-1-555x555.jpg"
+                    alt="">
+                <p>Gamora</p>
+            </div>
+
+            <div class="character-card" onclick="showCharacter('drax')">
+                <img src="https://cdn.ome.lt/w4mN3aBCM7cP3JOKMcsht9xUB_U=/1200x630/smart/filters:format(webp)/extras/conteudos/guardioes-da-galaxia-vol-3-dave-bautista-se-despede-de-drax.jpg"
+                    alt="">
+                <p>Drax</p>
+            </div>
+
+            <div class="character-card" onclick="showCharacter('mantis')">
+                <img src="https://uploads.jovemnerd.com.br/wp-content/uploads/2023/05/guardioes_da_galaxia_3_mantis__j25szm60i-760x428.jpg"
+                    alt="">
+                <p>Mantis</p>
+            </div>
+
+            <div class="character-card" onclick="showCharacter('rocket')">
+                <img src="https://rollingstone.com.br/wp-content/uploads/2023/04/guardioes-da-galaxia-vol-3-filme-rocket-racoon-personagem.jpg"
+                    alt="">
+                <p>Rocket Raccon</p>
+            </div>
+
+            <div class="character-card" onclick="showCharacter('groot')">
+                <img src="https://brobible.com/wp-content/uploads/2023/05/groot-in-gotg-vol-3.jpg" alt="">
+                <p>Groot</p>
+            </div>
+
+            <div class="character-card" onclick="showCharacter('nebula')">
+                <img src="https://disneyplusbrasil.com.br/wp-content/uploads/2023/05/Nebulosa-Guardioes-da-Galaxia-3.jpg"
+                    alt="">
+                <p>Nebulosa</p>
+            </div>
+
+            <div class="character-card" onclick="showCharacter('adam')">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiRvxtKpxH7M32RekWJz1m8dlSYrO6PG3yv8tmwB5CHUpcYEsTX4zTOYS5k-bqDQcnuac66BS1bw04vy1GkaRc9wZ3ns5lBQMSFooY5cMZuXD0YHwYAI3Ir52-_n7-5D1mm7gjBOvWGgdGHX7EyjoG11Qd2-8w6UYQhNd0fq5aXjUIg5R2o5g/s540/will-poul1.jpg"
+                    alt="">
+                <p>Adam warlock</p>
+            </div>
+
+            <div class="character-card" onclick="showCharacter('reed')">
+                <img src="https://images.squarespace-cdn.com/content/v1/51b3dc8ee4b051b96ceb10de/225c3790-7a0a-419b-b8ae-74ccc9f477ce/reed-richards-wont-be-the-center-of-avengers-doomsday-but-hes-still-key-to-the-story.jpg"
+                    alt="">
+                <p>Senhor Fantastico / Reed Richards</p>
+            </div>
+
+            <div class="character-card" onclick="showCharacter('sue')">
+                <img src="https://rollingstone.com.br/wp-content/uploads/2025/06/sue-storm-de-vanessa-kirby-sera-lider-do-quarteto-fantastico-revela-produtor.jpg"
+                    alt="">
+                <p>Mulher Invisivel / Sue Storm </p>
+            </div>
+
+            <div class="character-card" onclick="showCharacter('johnny')">
+                <img src="https://ovicio.com.br/wp-content/uploads/2025/03/20250328-joseph-quinn-o-tocha-humana-avengers-doomsday-555x555.webp"
+                    alt="">
+                <p>Tocha Humana / Johnny Storm</p>
+            </div>
+
+            <div class="character-card" onclick="showCharacter('ben')">
+                <img src="https://ovicio.com.br/wp-content/uploads/2025/02/20250205-coisa-em-quarteto-fantastico-primeiros-passos-555x555.webp"
+                    alt="">
+                <p>Coisa / Ben Grimm</p>
+            </div>
+
+            <div class="character-card" onclick="showCharacter('bucky')">
+                <img src="https://lumiere-a.akamaihd.net/v1/images/fws_specialod_72x48_bucky_v5_lg_996c10ed.jpeg?region=0,0,1667,936"
+                    alt="">
+                <p>Bucky Barnes</p>
+            </div>
+
+            <div class="character-card" onclick="showCharacter('yelena')">
+                <img src="https://ingresso-a.akamaihd.net/b2b/production/uploads/article/image/3988/4b6a439f099d1acd9fb99ded5d0bcda1.jpg"
+                    alt="">
+                <p>Yelena Belova</p>
+            </div>
+
+            <div class="character-card" onclick="showCharacter('alexei')">
+                <img src="https://www.correiobraziliense.com.br/cbradar/wp-content/uploads/2025/05/Edicoes-4-1.png"
+                    alt="">
+                <p>Guardião Vermelho / Alexei Shostakov</p>
+            </div>
+
+            <div class="character-card" onclick="showCharacter('john')">
+                <img src="https://ovicio.com.br/wp-content/uploads/2025/05/20250504-agente-americano-555x555.jpg"
+                    alt="">
+                <p>Agente Americano / John Walker </p>
+            </div>
+
+            <div class="character-card" onclick="showCharacter('ava')">
+                <img src="https://newr7-r7-prod.web.arc-cdn.net/resizer/v2/43AL4QST2JDCHLCKB3VNADTGTU.jpeg?auth=852a588d377691072777e30ccd42d7e0c174733fd61d2d4c91c13b3de8264d95&width=1396&height=700"
+                    alt="">
+                <p>Fantasma / Ava Starr</p>
+            </div>
+
+            <div class="character-card" onclick="showCharacter('loki')">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEkAFyoLZGcBCn8yhPw8fAITbxaVI5hd22YKcgHvyBDuBHmdVd0mGd7EFMKXya5-7sI74&usqp=CAU"
+                    alt="">
+                <p>Sentinela / Bob </p>
+            </div>
+
+            <div class="character-card" onclick="showCharacter('sam wilson')">
+                <img src="https://ovicio.com.br/wp-content/uploads/2021/04/20210426-mackie-sam-captain-america-1265885.jpeg"
+                    alt="">
+                <p>Capitão América / Sam Wilson</p>
+            </div>
+
+            <div class="character-card" onclick="showCharacter('peter parker')">
+                <img src="https://www.comboinfinito.com.br/principal/wp-content/uploads/2021/11/Homem-Aranha3.jpg"
+                    alt="">
+                <p>Homem Aranha / Peter Parker</p>
+            </div>
+
+            <div class="character-card" onclick="showCharacter('estranho')">
+                <img src="https://www.planocritico.com/wp-content/uploads/2018/05/76-Doutor-Estranho-Com-Spoilers-1.jpg"
+                    alt="">
+                <p>Doutor Estranho / Stephen Strange</p>
+            </div>
+
+            <div class="character-card" onclick="showCharacter('wanda')">
+                <img src="https://ofuxico.com.br/wp-content/uploads/2022/05/conheca-a-historia-de-wanda-maximoff-foto.jpg"
+                    alt="">
+                <p>Wanda Maximoff</p>
+            </div>
+
+            <div class="character-card" onclick="showCharacter('scott')">
+                <img src="https://br.web.img2.acsta.net/r_654_368/newsv7/17/09/25/15/45/2122295.jpg" alt="">
+                <p>Homem Formiga / Scott lang</p>
+            </div>
+
+            <div class="character-card" onclick="showCharacter('pantera')">
+                <img src="https://ingresso-a.akamaihd.net/b2b/production/uploads/article/image/914/pantera-negra-legado-do-chadwick-boseman.jpeg"
+                    alt="">
+                <p>Pantera Negra / T'Challa</p>
+            </div>
+
+            <div class="character-card" onclick="showCharacter('nick')">
+                <img src="https://upload.wikimedia.org/wikipedia/en/c/c8/Samuel_L._Jackson_as_Nick_Fury_in_The_Avengers_%282012_film%29.jpg"
+                    alt="">
+                <p>Nick Fury</p>
+            </div>
+
+            <div class="character-card" onclick="showCharacter('loki')">
+                <img src="https://rollingstone.com.br/wp-content/uploads/loki-serie-disney-foto-reproducao.jpg" alt="">
+                <p>Loki</p>
+            </div>
+
         </div>
 
-        <!-- Capitão América -->
-        <div class="character-card" onclick="showCharacter('capitao')">
-            <img src="https://i.pinimg.com/564x/14/2e/1f/142e1f9eb0e05a2ca720d1d6e70a7a4d.jpg" alt="">
-            <p>Steve Rogers / Capitão América</p>
+
+        <!-- ************ PÁGINAS INDIVIDUAIS ************ -->
+
+        <div id="ironman" class="char-page">
+            <button class="back-btn" onclick="backToList()">◀ Voltar</button>
+            <h2>Homem de Ferro</h2>
+            <img class="profile-img" src="https://via.placeholder.com/400x400/cc0000/ffffff?text=Iron+Man" alt="">
+            <p>Gênio, bilionário, playboy e filantropo. Criador das armaduras Iron Man.</p>
         </div>
 
-        <!-- Loki -->
-        <div class="character-card" onclick="showCharacter('loki')">
-            <img src="https://rollingstone.com.br/wp-content/uploads/loki-serie-disney-foto-reproducao.jpg" alt="">
-            <p>Loki</p>
+        <div id="capitao" class="char-page">
+            <button class="back-btn" onclick="backToList()">◀ Voltar</button>
+            <h2>Capitão América</h2>
+            <img class="profile-img" src="https://via.placeholder.com/400x400/cc0000/ffffff?text=Capitao" alt="">
+            <p>Soldado aprimorado com o Soro do Super Soldado. Líder dos Vingadores.</p>
         </div>
 
-        <!-- Loki (vilão – roxo) -->
-        <div class="character-card" onclick="showCharacter('loki')">
-            <img src="https://rollingstone.com.br/wp-content/uploads/loki-serie-disney-foto-reproducao.jpg" alt="">
-            <p>Loki</p>
+        <div id="hulk" class="char-page">
+            <button class="back-btn" onclick="backToList()">◀ Voltar</button>
+            <h2>Hulk/Bruce Banner</h2>
+            <img class="https://t.ctcdn.com.br/tn5XAN-HzlxywFs2cY_0ziwJ9O4=/768x432/smart/i1004921.jpeg" alt="">
+            <p>descrição hulk</p>
         </div>
 
-        <!-- Loki (vilão – roxo) -->
-        <div class="character-card" onclick="showCharacter('loki')">
-            <img src="https://rollingstone.com.br/wp-content/uploads/loki-serie-disney-foto-reproducao.jpg" alt="">
-            <p>Loki</p>
-        </div>
-
-        <!-- Loki (vilão – roxo) -->
-        <div class="character-card" onclick="showCharacter('loki')">
-            <img src="https://rollingstone.com.br/wp-content/uploads/loki-serie-disney-foto-reproducao.jpg" alt="">
-            <p>Loki</p>
-        </div>
-
-        <!-- Loki (vilão – roxo) -->
-        <div class="character-card" onclick="showCharacter('loki')">
-            <img src="https://rollingstone.com.br/wp-content/uploads/loki-serie-disney-foto-reproducao.jpg" alt="">
-            <p>Loki</p>
-        </div>
-
-        <!-- Loki (vilão – roxo) -->
-        <div class="character-card" onclick="showCharacter('loki')">
-            <img src="https://rollingstone.com.br/wp-content/uploads/loki-serie-disney-foto-reproducao.jpg" alt="">
-            <p>Loki</p>
-        </div>
-
-        <!-- Loki (vilão – roxo) -->
-        <div class="character-card" onclick="showCharacter('loki')">
-            <img src="https://rollingstone.com.br/wp-content/uploads/loki-serie-disney-foto-reproducao.jpg" alt="">
-            <p>Loki</p>
-        </div>
-
-        <!-- Loki (vilão – roxo) -->
-        <div class="character-card" onclick="showCharacter('loki')">
-            <img src="https://rollingstone.com.br/wp-content/uploads/loki-serie-disney-foto-reproducao.jpg" alt="">
-            <p>Loki</p>
-        </div>
-
-        <!-- Loki (vilão – roxo) -->
-        <div class="character-card" onclick="showCharacter('loki')">
-            <img src="https://rollingstone.com.br/wp-content/uploads/loki-serie-disney-foto-reproducao.jpg" alt="">
-            <p>Loki</p>
-        </div>
-
-        <!-- Loki (vilão – roxo) -->
-        <div class="character-card" onclick="showCharacter('loki')">
-            <img src="https://rollingstone.com.br/wp-content/uploads/loki-serie-disney-foto-reproducao.jpg" alt="">
-            <p>Loki</p>
-        </div>
-
-        <!-- Loki (vilão – roxo) -->
-        <div class="character-card" onclick="showCharacter('loki')">
-            <img src="https://rollingstone.com.br/wp-content/uploads/loki-serie-disney-foto-reproducao.jpg" alt="">
-            <p>Loki</p>
-        </div>
-
-        <!-- Loki (vilão – roxo) -->
-        <div class="character-card" onclick="showCharacter('loki')">
-            <img src="https://rollingstone.com.br/wp-content/uploads/loki-serie-disney-foto-reproducao.jpg" alt="">
-            <p>Loki</p>
-        </div>
-
-        <!-- Loki (vilão – roxo) -->
-        <div class="character-card" onclick="showCharacter('loki')">
-            <img src="https://rollingstone.com.br/wp-content/uploads/loki-serie-disney-foto-reproducao.jpg" alt="">
-            <p>Loki</p>
-        </div>
-
-        <!-- Loki (vilão – roxo) -->
-        <div class="character-card" onclick="showCharacter('loki')">
-            <img src="https://rollingstone.com.br/wp-content/uploads/loki-serie-disney-foto-reproducao.jpg" alt="">
-            <p>Loki</p>
-        </div>
-
-        <!-- Loki (vilão – roxo) -->
-        <div class="character-card" onclick="showCharacter('loki')">
-            <img src="https://rollingstone.com.br/wp-content/uploads/loki-serie-disney-foto-reproducao.jpg" alt="">
-            <p>Loki</p>
-        </div>
-
-        <!-- Loki (vilão – roxo) -->
-        <div class="character-card" onclick="showCharacter('loki')">
-            <img src="https://rollingstone.com.br/wp-content/uploads/loki-serie-disney-foto-reproducao.jpg" alt="">
-            <p>Loki</p>
-        </div>
-
-        <!-- Loki (vilão – roxo) -->
-        <div class="character-card" onclick="showCharacter('loki')">
-            <img src="https://rollingstone.com.br/wp-content/uploads/loki-serie-disney-foto-reproducao.jpg" alt="">
-            <p>Loki</p>
-        </div>
-
-        <!-- Loki (vilão – roxo) -->
-        <div class="character-card" onclick="showCharacter('loki')">
-            <img src="https://rollingstone.com.br/wp-content/uploads/loki-serie-disney-foto-reproducao.jpg" alt="">
-            <p>Loki</p>
-        </div>
-
-        <!-- Loki (vilão – roxo) -->
-        <div class="character-card" onclick="showCharacter('loki')">
-            <img src="https://rollingstone.com.br/wp-content/uploads/loki-serie-disney-foto-reproducao.jpg" alt="">
-            <p>Loki</p>
-        </div>
-
-        <!-- Loki (vilão – roxo) -->
-        <div class="character-card" onclick="showCharacter('loki')">
-            <img src="https://rollingstone.com.br/wp-content/uploads/loki-serie-disney-foto-reproducao.jpg" alt="">
-            <p>Loki</p>
-        </div>
-
-            <!-- Loki (vilão – roxo) -->
-        <div class="character-card" onclick="showCharacter('loki')">
-            <img src="https://rollingstone.com.br/wp-content/uploads/loki-serie-disney-foto-reproducao.jpg" alt="">
-            <p>Loki</p>
-        </div>
-
-        <!-- Loki (vilão – roxo) -->
-        <div class="character-card" onclick="showCharacter('loki')">
-            <img src="https://rollingstone.com.br/wp-content/uploads/loki-serie-disney-foto-reproducao.jpg" alt="">
-            <p>Loki</p>
-        </div>
-
-        <!-- Loki (vilão – roxo) -->
-        <div class="character-card" onclick="showCharacter('loki')">
-            <img src="https://rollingstone.com.br/wp-content/uploads/loki-serie-disney-foto-reproducao.jpg" alt="">
-            <p>Loki</p>
-        </div>
-
-        <!-- Loki (vilão – roxo) -->
-        <div class="character-card" onclick="showCharacter('loki')">
-            <img src="https://rollingstone.com.br/wp-content/uploads/loki-serie-disney-foto-reproducao.jpg" alt="">
-            <p>Loki</p>
-        </div>
-
-        <!-- Loki (vilão – roxo) -->
-        <div class="character-card" onclick="showCharacter('loki')">
-            <img src="https://rollingstone.com.br/wp-content/uploads/loki-serie-disney-foto-reproducao.jpg" alt="">
-            <p>Loki</p>
-        </div>
-
-        <!-- Loki (vilão – roxo) -->
-        <div class="character-card" onclick="showCharacter('loki')">
-            <img src="https://rollingstone.com.br/wp-content/uploads/loki-serie-disney-foto-reproducao.jpg" alt="">
-            <p>Loki</p>
-        </div>
-
-        <!-- Loki (vilão – roxo) -->
-        <div class="character-card" onclick="showCharacter('loki')">
-            <img src="https://rollingstone.com.br/wp-content/uploads/loki-serie-disney-foto-reproducao.jpg" alt="">
-            <p>Loki</p>
-        </div>
-
-        <!-- Loki (vilão – roxo) -->
-        <div class="character-card" onclick="showCharacter('loki')">
-            <img src="https://rollingstone.com.br/wp-content/uploads/loki-serie-disney-foto-reproducao.jpg" alt="">
-            <p>Loki</p>
-        </div>
-
-            <!-- Loki (vilão – roxo) -->
-        <div class="character-card" onclick="showCharacter('loki')">
-            <img src="https://rollingstone.com.br/wp-content/uploads/loki-serie-disney-foto-reproducao.jpg" alt="">
-            <p>Loki</p>
-        </div>
-
-        <!-- Loki (vilão – roxo) -->
-        <div class="character-card" onclick="showCharacter('loki')">
-            <img src="https://rollingstone.com.br/wp-content/uploads/loki-serie-disney-foto-reproducao.jpg" alt="">
-            <p>Loki</p>
+        <div id="loki" class="char-page">
+            <button class="back-btn" onclick="backToList()">◀ Voltar</button>
+            <h2>Loki</h2>
+            <img class="profile-img" src="https://via.placeholder.com/400x400/550077/ffffff?text=Loki" alt="">
+            <p>Deus da Trapaça, manipulador, irmão de Thor e figura central em múltiplas linhas temporais.</p>
         </div>
 
     </div>
 
-
-    <!-- ************ PÁGINAS INDIVIDUAIS ************ -->
-
-    <!-- Iron Man -->
-    <div id="ironman" class="char-page">
-        <button class="back-btn" onclick="backToList()">◀ Voltar</button>
-        <h2>Homem de Ferro</h2>
-        <img class="profile-img" src="https://via.placeholder.com/400x400/cc0000/ffffff?text=Iron+Man" alt="">
-        <p>Gênio, bilionário, playboy e filantropo. Criador das armaduras Iron Man.</p>
+    
+    <!-- ************ FILMES E SÉRIES GRUPOS ************ -->
+    <h2>Filmes e Séries</h2>
+    <div id="characters-list" class="film-grid">
+        <div id="tab2" class="tab-card">
+            <div class="film-card" onclick="showCharacter('vingadores')">
+                <img src="vingadores.png" alt="">
+                <p>Vingadores</p>
+            </div>
+        </div>
+        <!-- ************ GRUPOS************ -->
+        <div id="vingadores" class="char-page">
+            <button class="back-btn" onclick="backToList()">◀ Voltar</button>
+            <h2>Vingadores</h2>
+            <img class="profile-img"
+                src="https://upload.wikimedia.org/wikipedia/pt/thumb/9/9b/Avengers_Endgame.jpg/250px-Avengers_Endgame.jpg" alt="">
+        </div>
     </div>
-
-    <!-- Capitão -->
-    <div id="capitao" class="char-page">
-        <button class="back-btn" onclick="backToList()">◀ Voltar</button>
-        <h2>Capitão América</h2>
-        <img class="profile-img" src="https://via.placeholder.com/400x400/cc0000/ffffff?text=Capitao" alt="">
-        <p>Soldado aprimorado com o Soro do Super Soldado. Líder dos Vingadores.</p>
-    </div>
-
-    <!-- Loki -->
-    <div id="loki" class="char-page">
-        <button class="back-btn" onclick="backToList()">◀ Voltar</button>
-        <h2>Loki</h2>
-        <img class="profile-img" src="https://via.placeholder.com/400x400/550077/ffffff?text=Loki" alt="">
-        <p>Deus da Trapaça, manipulador, irmão de Thor e figura central em múltiplas linhas temporais.</p>
-    </div>
-
-</div>
-
-<!-- TAB 2 -->
-<div id="tab2" class="tab-content">
-  <h2>Filmes e Séries</h2>
-  <p>Conteúdo da segunda aba.</p>
-</div>
-
 </body>
+
 </html>
