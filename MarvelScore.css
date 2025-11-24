@@ -1,0 +1,71 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+h1 {
+    color: #b30000;
+}
+
+.tabs {
+    margin-bottom: 20px;
+}
+
+.tab-button {
+    padding: 10px 20px;
+    background: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.tab-button.active {
+    background: #8b0000;
+}
+
+.tab-content { display: none; }
+.tab-content.active { display: block; }
+
+.characters-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+    gap: 20px;
+}
+
+.character-card {
+    cursor: pointer;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.character-card:hover {
+    transform: scale(1.05);
+}
+
+.character-card img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.char-page {
+    display: none;
+    padding: 20px;
+}
+
+.profile-img {
+    width: 250px;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+
+.back-btn {
+    background: #8b0000;
+    padding: 10px 15px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
