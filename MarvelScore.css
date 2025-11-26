@@ -114,3 +114,85 @@ h2 {
     object-fit: cover;
     border-radius: 10px;
 }
+
+body {
+    background: #070711;
+    color: white;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.titulo {
+    text-align: center;
+    margin: 30px 0;
+    font-size: 32px;
+    letter-spacing: 2px;
+}
+
+.timeline {
+    position: relative;
+    width: 7000px; /* espaço enorme para 50 filmes */
+    padding: 120px 0;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 150px;
+}
+
+.linha {
+    position: absolute;
+    top: 50%;
+    width: 172%;
+    height: 4px;
+    background: white;
+}
+
+.item {
+    position: relative;
+    text-align: center;
+}
+
+.item img {
+    width: 180px;
+    height: 260px;
+    object-fit: cover;
+    border: 3px solid red;
+    border-radius: 8px;
+}
+
+/* TEXTO */
+.item span {
+    display: block;
+    margin-top: 8px;
+    width: 180px;
+    font-size: 15px;
+}
+
+/* POSIÇÃO ACIMA */
+.item.up {
+    transform: translateY(-180px);
+}
+
+/* POSIÇÃO ABAIXO */
+.item.down {
+    transform: translateY(180px);
+}
+
+/* LINHA QUE CONECTA (vertical) */
+.item::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    width: 3px;
+    height: 90px;
+    background: white;
+    transform: translateX(-50%);
+}
+
+/* Linha sobe ou desce dependendo do item */
+.item.up::after {
+    top: 315px;   /* sai de baixo da imagem */
+}
+
+.item.down::after {
+    top: -90px;   /* sai de cima da imagem */
+}
